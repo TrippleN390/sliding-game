@@ -1,0 +1,45 @@
+:root{
+    --width: 400px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, #DD4124 35%, #5B5EA6 100%);
+}
+#game{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid black;
+}
+#btn{
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border: 3px solid black;
+    border-radius: 0.3rem;
+    margin: 1rem auto;
+    display: block;
+    background-color: lightgreen;
+}
+#btn:active{
+    background-color: red;
+}
+.slider{
+    visibility: hidden;
+    height: 20px;
+    width: 100px;
+    background-color: #C0C0C0;
+    position: relative;
+}
+#slider1{
+    visibility: visible;
+}
+.animate{
+    animation: slide 4s infinite linear;
+}
+@keyframes slide{
+    0%{left:0px}
+    50%{left:var(--width)}
+    100%{left:0px}
+}
+
